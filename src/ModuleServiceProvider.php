@@ -44,7 +44,6 @@ class ModuleServiceProvider extends ServiceProvider
         $this->loadMigrationsFrom(__DIR__ . '/database/migrations');
         $this->loadViews();
         $this->publishConfig();
-        $this->publishers();
         $this->menuListener($events);
     }
 
