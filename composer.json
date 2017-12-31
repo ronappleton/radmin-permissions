@@ -1,0 +1,45 @@
+{
+    "name": "ronappleton/radmin-permissions",
+    "description": "Permissions module for RADMIN",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ron Appleton",
+            "email": "ron.appleton@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "laravel/framework": "5.5.*",
+        "ronappleton/menubuilder": "dev-master",
+        "spatie/laravel-permission": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "RonAppleton\\Radmin\\Permissions\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "RonAppleton\\Radmin\\Permissions\\ModuleServiceProvider"
+            ],
+            "aliases": {
+            }
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "optimize-autoloader": true
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../menubuilder",
+            "options": {
+                "symlink": true
+            }
+        }
+    ]
+}
