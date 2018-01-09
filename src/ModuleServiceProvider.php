@@ -96,24 +96,7 @@ class ModuleServiceProvider extends ServiceProvider
     {
         return [
             [
-                'text' => 'Woohoo',
-                'url' => '#',
-                'icon' => 'cart',
-                'submenu' => [
-                    [
-                        'text' => 'Dynamic Called',
-                        'text_color' => 'primary',
-                        'url' => 'product',
-                        'icon' => 'list',
-                        'dropped',
-                    ],
-                    [
-                        'text' => 'Product Category',
-                        'url' => 'product_category',
-                        'icon' => 'motorcycle',
-                        'dropped',
-                    ],
-                ],
+             
             ],
         ];
     }
