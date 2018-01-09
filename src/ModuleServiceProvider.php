@@ -95,9 +95,6 @@ class ModuleServiceProvider extends ServiceProvider
     public function menuSidebar()
     {
         return [
-            [
-             
-            ],
         ];
     }
 
